@@ -3,7 +3,8 @@ local plugins = {
   require("plugins.mason"),
   require("plugins.mason-lspconfig"),
   require("plugins.lspconfig"),
-  require("plugins.telescope")
+  require("plugins.telescope"),
+  require("plugins.catppuccin")
 }
 
 return plugins
