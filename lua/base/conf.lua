@@ -3,6 +3,7 @@ local configurations = {}
 
 function configurations.load_conf() 
   vim.opt.clipboard = "unnamedplus" --setup global clipboard
+  vim.opt.termguicolors = true
 
   vim.opt.tabstop = 2 --width of tab to 2
   vim.opt.shiftwidth = 2 --each level of indentation uses 2

@@ -13,3 +13,5 @@ I'm using lazy nvim as a package manager and as of now the plugins installed are
 * `mason`
 * `mason-lspconfig`
 * `telescope`
+* `catpuccin`
+* `bufferline`

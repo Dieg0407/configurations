@@ -4,7 +4,8 @@ local plugins = {
   require("plugins.mason-lspconfig"),
   require("plugins.lspconfig"),
   require("plugins.telescope"),
-  require("plugins.catppuccin")
+  require("plugins.catppuccin"),
+  require("plugins.bufferline")
 }
 
 return plugins
