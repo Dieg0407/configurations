@@ -15,3 +15,4 @@ I'm using lazy nvim as a package manager and as of now the plugins installed are
 * `telescope`
 * `catpuccin`
 * `bufferline`
+* `nvim-jdtls`
