@@ -29,6 +29,10 @@ local plugin = {
 
     local tsserver = require("plugins.lspconfig.tsserver")
     tsserver.configure(capabilities)
+
+    local pyright = require("plugins.lspconfig.pyright")
+    pyright.configure(capabilities)
+    
   end
 }
 

@@ -8,7 +8,8 @@ local plugin = {
         "lua_ls",
         "rust_analyzer",
         "tsserver",
-        "omnisharp"
+        "omnisharp",
+        "pyright"
       }
     }
   end
