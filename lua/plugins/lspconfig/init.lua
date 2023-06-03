@@ -26,6 +26,9 @@ local plugin = {
 
     local lua_language_server = require("plugins.lspconfig.lua-language-server")
     lua_language_server.configure(capabilities)
+
+    local tsserver = require("plugins.lspconfig.tsserver")
+    tsserver.configure(capabilities)
   end
 }
 
