@@ -32,7 +32,10 @@ local plugin = {
 
     local pyright = require("plugins.lspconfig.pyright")
     pyright.configure(capabilities)
-    
+
+    local rust_analyzer = require("plugins.lspconfig.rust_analyzer")
+    rust_analyzer.configure(capabilities)
+
   end
 }
 
