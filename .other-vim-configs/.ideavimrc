@@ -1,0 +1,12 @@
+# copy to clipboard
+set clipboard+=unnamed
+
+# space as map leader
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+
+# search content in files
+nnoremap <Leader>sf :action FindInPath<CR>
+
+# search for a specific file
+nnoremap <Leader>ff :action GotoFile<CR>
