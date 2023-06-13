@@ -15,7 +15,7 @@ I'm using lazy nvim as a package manager and as of now the plugins installed are
 * `telescope`
 * `catpuccin`
 * `bufferline`
-* `nvim-jdtls`
+* `treesitter`
 
 ## Other VIM like configurations
 I added a subfolder that will have some common configurations for other tools that
