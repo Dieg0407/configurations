@@ -18,9 +18,19 @@ local plugin = {
   },
   config = function()
 
-    -- Global mappings.
-    vim.keymap.set('n', '<Leader>d', vim.diagnostic.open_float)
-    vim.keymap.set('n', '<Leader>q', vim.diagnostic.setloclist)
+    vim.keymap.set('n', '<Leader>d', vim.lsp.buf.hover)
+    vim.keymap.set('n', '<Leader>gD', vim.lsp.buf.declaration, opts)
+    vim.keymap.set('n', '<Leader>gd', vim.lsp.buf.definition, opts)
+    vim.keymap.set('n', '<Leader>gi', vim.lsp.buf.implementation, opts)
+    vim.keymap.set('n', '<Leader>k', vim.lsp.buf.signature_help, opts)
+
+    vim.keymap.set('n', '<Leader>td', vim.lsp.buf.type_definition, opts)
+    vim.keymap.set('n', '<Leader>rn', vim.lsp.buf.rename, opts)
+    vim.keymap.set({ 'n', 'v' }, '<Leader>ca', vim.lsp.buf.code_action, opts)
+    vim.keymap.set('n', '<Leader>gr', vim.lsp.buf.references, opts)
+    vim.keymap.set('n', '<Leader>f', function()
+      vim.lsp.buf.format { async = true }
+    end, opts)
 
     local capabilities = cmp_configuration.setup()
 
