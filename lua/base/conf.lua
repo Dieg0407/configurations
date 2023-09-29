@@ -19,6 +19,7 @@ function configurations.load_conf()
 
   -- enable numlines
   vim.wo.number = true
+  vim.opt.wrap = false
 end
 
 return configurations
