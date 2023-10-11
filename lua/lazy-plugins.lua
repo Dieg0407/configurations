@@ -4,7 +4,7 @@ local plugins = {
   require("plugins.mason-lspconfig"),
   require("plugins.lspconfig"),
   require("plugins.telescope"),
-  require("plugins.catppuccin"),
+  require("plugins.themes"),
   require("plugins.treesitter")
 }
 
