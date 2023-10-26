@@ -46,6 +46,10 @@ local plugin = {
     local rust_analyzer = require("plugins.lspconfig.rust_analyzer")
     rust_analyzer.configure(capabilities)
 
+    local gradle_ls = require("plugins.lspconfig.gradle-ls")
+    gradle_ls.configure(capabilities)
+
+
   end
 }
 
