@@ -59,6 +59,7 @@
     foreground_color = "#869799"
     scrollback_lines = 10000
     copy_on_selection = True
+    show_titlebar = false
 [layouts]
   [[default]]
     [[[child1]]]
