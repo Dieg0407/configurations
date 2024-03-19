@@ -1,5 +1,6 @@
 -- setup base key bindings and settings
-vim.g.mapleader = "<Space>"
+vim.keymap.set("n", "<Space>", "<Nop>", { silent = true, remap = false })
+vim.g.mapleader = " "
 vim.wo.number = true
 vim.opt.clipboard = "unnamedplus"
 vim.opt.tabstop = 2
