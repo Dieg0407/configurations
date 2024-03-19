@@ -1,3 +1,12 @@
+-- setup base key bindings and settings
+vim.g.mapleader = "<Space>"
+vim.wo.number = true
+vim.opt.clipboard = "unnamedplus"
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+vim.bo.softtabstop = 2
+
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
