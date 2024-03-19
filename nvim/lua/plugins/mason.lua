@@ -26,8 +26,16 @@ return {
     },
     config = function()
       local lspconfig = require('lspconfig')
+      lspconfig.lua_ls.setup {
+        settings = {
+          Lua = {
+            diagnostics = {
+              globals = { "vim" }
+            }
+          }
+        }
+      }
       lspconfig.rust_analyzer.setup {}
-      lspconfig.lua_ls.setup {}
       lspconfig.clangd.setup {}
       lspconfig.terraformls.setup {}
       lspconfig.tsserver.setup {}
