@@ -12,7 +12,7 @@ local function setup_cmp(cmp)
     mapping = cmp.mapping.preset.insert({
       ["<C-b>"] = cmp.mapping.scroll_docs(-4),
       ["<C-f>"] = cmp.mapping.scroll_docs(4),
-      ["<C-Space>"] = cmp.mapping.complete(),
+      ["<C-s>"] = cmp.mapping.complete(),
       ["<C-e>"] = cmp.mapping.abort(),
       ["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     }),
@@ -119,7 +119,6 @@ return {
           vim.keymap.set('n', '<Leader>rn', vim.lsp.buf.rename, opts)
           vim.keymap.set({ 'n', 'v' }, '<Leader>ca', vim.lsp.buf.code_action, opts)
           vim.keymap.set('n', '<Leader>gr', vim.lsp.buf.references, opts)
-          vim.keymap.set('n', '<Leader>f', function() vim.lsp.buf.format { async = true } end, opts)
         end,
       })
     end,
