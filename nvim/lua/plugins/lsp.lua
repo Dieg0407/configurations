@@ -122,5 +122,19 @@ return {
         end,
       })
     end,
+  },
+  {
+    "zbirenbaum/copilot.lua",
+    dependencies = { "neovim/nvim-lspconfig" },
+    config = function()
+      require("copilot").setup({})
+    end,
+  },
+  {
+    "zbirenbaum/copilot-cmp",
+    dependencies = { "zbirenbaum/copilot.lua" },
+    config = function()
+      require("copilot_cmp").setup()
+    end,
   }
 }
