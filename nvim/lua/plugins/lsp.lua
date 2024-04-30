@@ -17,6 +17,7 @@ local function setup_cmp(cmp)
       ["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
     }),
     sources = cmp.config.sources({
+      { name = 'copilot', group_index = 2 },
       { name = 'nvim_lsp' },
       { name = 'vsnip' },
     }, {
@@ -80,7 +81,9 @@ return {
       "hrsh7th/cmp-cmdline",
       "hrsh7th/nvim-cmp",
       "hrsh7th/cmp-vsnip",
-      "hrsh7th/vim-vsnip"
+      "hrsh7th/vim-vsnip",
+      "zbirenbaum/copilot.lua",
+      "zbirenbaum/copilot-cmp"
     },
     config = function()
       local cmp = require("cmp")
@@ -121,19 +124,11 @@ return {
           vim.keymap.set('n', '<Leader>gr', vim.lsp.buf.references, opts)
         end,
       })
-    end,
-  },
-  {
-    "zbirenbaum/copilot.lua",
-    dependencies = { "neovim/nvim-lspconfig" },
-    config = function()
-      require("copilot").setup({})
-    end,
-  },
-  {
-    "zbirenbaum/copilot-cmp",
-    dependencies = { "zbirenbaum/copilot.lua" },
-    config = function()
+
+      require("copilot").setup({
+        suggestion = { enabled = false },
+        panel = { enabled = false },
+      })
       require("copilot_cmp").setup()
     end,
   }
