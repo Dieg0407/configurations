@@ -103,7 +103,18 @@ return {
           }
         }
       }
-      lspconfig.rust_analyzer.setup { capabilities = capabilities }
+      lspconfig.rust_analyzer.setup {
+        capabilities = capabilities,
+        settings = {
+          ["rust-analyzer"] = {
+            imports = {
+              granularity = {
+                group = "item"
+              },
+            }
+          }
+        }
+      }
       lspconfig.clangd.setup { capabilities = capabilities }
       lspconfig.terraformls.setup { capabilities = capabilities }
       lspconfig.tsserver.setup { capabilities = capabilities }
