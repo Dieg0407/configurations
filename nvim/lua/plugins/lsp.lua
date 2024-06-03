@@ -128,6 +128,7 @@ return {
           vim.keymap.set('n', '<Leader>gd', vim.lsp.buf.definition, opts)
           vim.keymap.set('n', '<Leader>gi', vim.lsp.buf.implementation, opts)
           vim.keymap.set('n', '<Leader>k', vim.lsp.buf.signature_help, opts)
+          vim.keymap.set('n', '<Leader>fa', vim.lsp.buf.format, opts)
 
           vim.keymap.set('n', '<Leader>td', vim.lsp.buf.type_definition, opts)
           vim.keymap.set('n', '<Leader>rn', vim.lsp.buf.rename, opts)
