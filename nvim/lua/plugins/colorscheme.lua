@@ -7,18 +7,27 @@
 --      vim.cmd([[colorscheme tokyonight-night]])
 --    end,
 --  }
+--  {
+--    "Shatur/neovim-ayu",
+--    lazy = false,
+--    config = function()
+--      require("ayu").setup({
+--        overrides = {
+--         Normal = { bg = "None" }
+--        }
+--      })
+--
+--      vim.cmd.colorscheme "ayu"
+--    end
+--  }
+--
 return {
   {
-    "Shatur/neovim-ayu",
+    "navarasu/onedark.nvim",
     lazy = false,
     config = function()
-      require("ayu").setup({
-        overrides = {
-          Normal = { bg = "None" }
-        }
-      })
-
-      vim.cmd.colorscheme "ayu"
+      require("onedark").setup({})
+      vim.cmd.colorscheme "onedark"
     end
   }
 }
