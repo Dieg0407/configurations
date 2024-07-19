@@ -9,6 +9,15 @@ return {
     dependencies = {"plenary"},
     lazy = false,
     tag = "0.1.6",
+    opts = {
+      defaults = {
+        layout_config = {
+          horizontal = {
+            preview_cutoff = 0,
+          },
+        },
+      }
+    },
     config = function(PluginSpec, opts)
       require("telescope").setup(opts)
       local builtin = require("telescope.builtin")
