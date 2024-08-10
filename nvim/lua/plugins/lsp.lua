@@ -63,7 +63,7 @@ return {
     lazy = false,
     dependencies = { "williamboman/mason.nvim" },
     opts = {
-      ensure_installed = { "lua_ls", "rust_analyzer", "tsserver", "clangd", "terraformls", "pyright" }
+      ensure_installed = { "lua_ls", "rust_analyzer", "tsserver", "clangd", "terraformls", "pyright", "gopls" }
     },
     config = function(_, opts)
       require("mason-lspconfig").setup(opts)
@@ -118,6 +118,8 @@ return {
       lspconfig.clangd.setup { capabilities = capabilities }
       lspconfig.terraformls.setup { capabilities = capabilities }
       lspconfig.tsserver.setup { capabilities = capabilities }
+      lspconfig.gopls.setup { capabilities = capabilities }
+      lspconfig.pyright.setup { capabilities = capabilities }
       lspconfig.jdtls.setup { capabilities = capabilities }
 
       vim.api.nvim_create_autocmd('LspAttach', {

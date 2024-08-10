@@ -20,6 +20,7 @@ vim.bo.softtabstop = 2
 vim.opt.expandtab = true
 
 set_tab_size("python", 4)
+set_tab_size("go", 4)
 set_tab_size("javascript", 2)
 set_tab_size("html", 2)
 set_tab_size("lua", 2)
