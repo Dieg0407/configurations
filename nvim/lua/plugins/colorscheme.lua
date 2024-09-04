@@ -21,13 +21,24 @@
 --    end
 --  }
 --
+-- return {
+--  {
+--    "navarasu/onedark.nvim",
+--    lazy = false,
+--    config = function()
+--      require("onedark").setup({})
+--      vim.cmd.colorscheme "onedark"
+--    end
+--  }
+-- }
+
 return {
   {
-    "navarasu/onedark.nvim",
+    "Mofiqul/dracula.nvim",
     lazy = false,
     config = function()
-      require("onedark").setup({})
-      vim.cmd.colorscheme "onedark"
+      require("dracula").setup({})
+      vim.cmd.colorscheme "dracula"
     end
   }
 }
