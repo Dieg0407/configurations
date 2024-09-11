@@ -25,6 +25,7 @@ set_tab_size("javascript", 2)
 set_tab_size("html", 2)
 set_tab_size("lua", 2)
 set_tab_size("rust", 4)
+set_tab_size("java", 4)
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
