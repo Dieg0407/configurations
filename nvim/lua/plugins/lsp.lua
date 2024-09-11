@@ -1,94 +1,15 @@
-local function setup_cmp(cmp)
-  cmp.setup({
-    snippet = {
-      expand = function(args)
-        vim.fn["vsnip#anonymous"](args.body)
-      end,
-    },
-    window = {
-      completion = cmp.config.window.bordered(),
-      documentation = cmp.config.window.bordered()
-    },
-    mapping = cmp.mapping.preset.insert({
-      ["<C-b>"] = cmp.mapping.scroll_docs(-4),
-      ["<C-f>"] = cmp.mapping.scroll_docs(4),
-      ["<C-s>"] = cmp.mapping.complete(),
-      ["<C-e>"] = cmp.mapping.abort(),
-      ["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-    }),
-    sources = cmp.config.sources({
-      { name = 'copilot', group_index = 2 },
-      { name = 'nvim_lsp' },
-      { name = 'vsnip' },
-    }, {
-      { name = 'buffer' },
-    })
-  })
-
-  cmp.setup.filetype('gitcommit', {
-    sources = cmp.config.sources({
-      { name = 'git' },
-    }, {
-      { name = 'buffer' },
-    })
-  })
-
-  cmp.setup.cmdline({ '/', '?' }, {
-    mapping = cmp.mapping.preset.cmdline(),
-    sources = {
-      { name = 'buffer' }
-    }
-  })
-
-  cmp.setup.cmdline(':', {
-    mapping = cmp.mapping.preset.cmdline(),
-    sources = cmp.config.sources({
-      { name = 'path' }
-    }, {
-      { name = 'cmdline' }
-    })
-  })
-end
-
 return {
-  {
-    "williamboman/mason.nvim",
-    lazy = false,
-    config = function(_, opts)
-      require("mason").setup(opts)
-    end
-  },
-  {
-    "williamboman/mason-lspconfig.nvim",
-    lazy = false,
-    dependencies = { "williamboman/mason.nvim" },
-    opts = {
-      ensure_installed = { "lua_ls", "rust_analyzer", "tsserver", "clangd", "terraformls", "pyright", "gopls" }
-    },
-    config = function(_, opts)
-      require("mason-lspconfig").setup(opts)
-    end
-  },
   {
     "neovim/nvim-lspconfig",
     lazy = false,
     dependencies = {
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
-      "hrsh7th/cmp-nvim-lsp",
-      "hrsh7th/cmp-buffer",
-      "hrsh7th/cmp-path",
-      "hrsh7th/cmp-cmdline",
       "hrsh7th/nvim-cmp",
-      "hrsh7th/cmp-vsnip",
-      "hrsh7th/vim-vsnip",
       "zbirenbaum/copilot.lua",
       "zbirenbaum/copilot-cmp",
     },
     config = function()
-      local cmp = require("cmp")
-      setup_cmp(cmp)
-
       local cmp_nvim_lsp = require("cmp_nvim_lsp")
       local capabilities = cmp_nvim_lsp.default_capabilities()
 
