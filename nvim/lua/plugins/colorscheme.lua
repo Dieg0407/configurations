@@ -34,11 +34,11 @@
 
 return {
   {
-    "Mofiqul/dracula.nvim",
+    "ellisonleao/gruvbox.nvim",
     lazy = false,
     config = function()
-      require("dracula").setup({})
-      vim.cmd.colorscheme "dracula"
+      require("gruvbox").setup({})
+      vim.cmd.colorscheme "gruvbox"
     end
   }
 }

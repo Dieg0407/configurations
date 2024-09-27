@@ -1,12 +1,12 @@
 return {
-  { 
+  {
     "nvim-lua/plenary.nvim",
     name = "plenary"
   },
   {
     "nvim-telescope/telescope.nvim",
     name = "telescope",
-    dependencies = {"plenary"},
+    dependencies = { "plenary" },
     lazy = false,
     tag = "0.1.6",
     opts = {
