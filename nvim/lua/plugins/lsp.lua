@@ -36,9 +36,16 @@ return {
           }
         }
       }
+      lspconfig.ts_ls.setup {
+        capabilities = capabilities,
+        root_dir = lspconfig.util.root_pattern("package.json"),
+      }
+      lspconfig.denols.setup {
+        capabilities = capabilities,
+        root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
+      }
       lspconfig.clangd.setup { capabilities = capabilities }
       lspconfig.terraformls.setup { capabilities = capabilities }
-      lspconfig.tsserver.setup { capabilities = capabilities }
       lspconfig.gopls.setup { capabilities = capabilities }
       lspconfig.pyright.setup { capabilities = capabilities }
       lspconfig.jdtls.setup { capabilities = capabilities }

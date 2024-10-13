@@ -11,7 +11,7 @@ return {
     lazy = false,
     dependencies = { "williamboman/mason.nvim" },
     opts = {
-      ensure_installed = { "lua_ls", "rust_analyzer", "tsserver", "clangd", "terraformls", "pyright", "gopls" }
+      ensure_installed = { "lua_ls", "rust_analyzer", "ts_ls", "clangd", "terraformls", "pyright", "gopls" }
     },
     config = function(_, opts)
       require("mason-lspconfig").setup(opts)
