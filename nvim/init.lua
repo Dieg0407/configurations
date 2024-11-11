@@ -646,6 +646,7 @@ require("lazy").setup({
 					},
 				},
 				bashls = {},
+				denols = {},
 			}
 
 			-- Ensure the servers and tools above are installed
