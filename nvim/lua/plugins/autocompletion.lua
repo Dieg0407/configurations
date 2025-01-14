@@ -34,8 +34,8 @@ return {
 			--  into multiple repos for maintenance purposes.
 			"hrsh7th/cmp-nvim-lsp",
 			"hrsh7th/cmp-path",
-			"zbirenbaum/copilot.lua",
-			"zbirenbaum/copilot-cmp",
+			-- "zbirenbaum/copilot.lua",
+			-- "zbirenbaum/copilot-cmp",
 		},
 		config = function()
 			-- See `:help cmp`
@@ -44,11 +44,11 @@ return {
 
 			luasnip.config.setup({})
 
-			require("copilot").setup({
-				suggestion = { enabled = false },
-				panel = { enabled = false },
-			})
-			require("copilot_cmp").setup()
+			-- require("copilot").setup({
+			--	suggestion = { enabled = false },
+			--	panel = { enabled = false },
+			--	})
+			--	require("copilot_cmp").setup()
 
 			cmp.setup({
 				snippet = {
@@ -119,7 +119,7 @@ return {
 					{ name = "nvim_lsp" },
 					{ name = "luasnip" },
 					{ name = "path" },
-					{ name = "copilot", group_index = 2 },
+					-- { name = "copilot", group_index = 2 },
 				},
 			})
 		end,

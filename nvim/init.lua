@@ -138,6 +138,11 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
+vim.api.nvim_create_user_command(
+	"StartJava",
+	function() end,
+	{ desc = "This is a placeholder to trigger the java plugin" }
+)
 -- [[ Configure and install plugins ]]
 require("lazy").setup({
 	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
@@ -158,6 +163,7 @@ require("lazy").setup({
 	require("plugins.which_key"),
 	require("plugins.telescope"),
 	require("plugins.lsp"),
+	require("plugins.java"),
 	require("plugins.autoformat"),
 	require("plugins.autocompletion"),
 
