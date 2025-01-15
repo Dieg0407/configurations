@@ -3,7 +3,6 @@
 return {
 	"mfussenegger/nvim-jdtls",
 	name = "java",
-	cmd = "StartJava",
 	config = function(_, _)
 		local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
 		local workspace_dir = "/opt/jdtls/workspace/" .. project_name
@@ -57,6 +56,12 @@ return {
 				bundles = {},
 			},
 		}
-		require("jdtls").start_or_attach(config)
+
+		vim.api.nvim_create_autocmd("FileType", {
+			pattern = "java",
+			callback = function()
+				require("jdtls").start_or_attach(config)
+			end,
+		})
 	end,
 }
