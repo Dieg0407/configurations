@@ -174,6 +174,7 @@ return {
 				},
 				bashls = {},
 				denols = {},
+				lemminx = {},
 			}
 
 			-- Ensure the servers and tools above are installed
