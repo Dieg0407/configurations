@@ -60,7 +60,10 @@ return {
 		vim.api.nvim_create_autocmd("FileType", {
 			pattern = "java",
 			callback = function()
-				require("jdtls").start_or_attach(config)
+				local jdtls = require("jdtls")
+				jdtls.start_or_attach(config)
+				vim.keymap.set("n", "<leader>up", jdtls.update_project_config, { desc = "Java: [U]pdate [P]roject" })
+				vim.keymap.set("n", "<leader>oi", jdtls.update_project_config, { desc = "Java: [O]rganize [I]mports" })
 			end,
 		})
 	end,
