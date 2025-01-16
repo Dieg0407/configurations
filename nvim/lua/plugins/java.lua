@@ -63,7 +63,7 @@ return {
 				local jdtls = require("jdtls")
 				jdtls.start_or_attach(config)
 				vim.keymap.set("n", "<leader>up", jdtls.update_project_config, { desc = "Java: [U]pdate [P]roject" })
-				vim.keymap.set("n", "<leader>oi", jdtls.update_project_config, { desc = "Java: [O]rganize [I]mports" })
+				vim.keymap.set("n", "<leader>oi", jdtls.organize_imports, { desc = "Java: [O]rganize [I]mports" })
 			end,
 		})
 	end,
