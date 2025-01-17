@@ -175,6 +175,7 @@ return {
 				bashls = {},
 				denols = {},
 				lemminx = {},
+				texlab = {},
 			}
 
 			-- Ensure the servers and tools above are installed
