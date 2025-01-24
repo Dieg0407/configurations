@@ -83,6 +83,8 @@ return {
 
 					map("<Leader>h", vim.lsp.buf.hover, "[H]over")
 
+					map("<Leader>of", vim.diagnostic.open_float, "[O]pen [F]loat")
+
 					-- WARN: This is not Goto Definition, this is Goto Declaration.
 					--  For example, in C this would take you to the header.
 					map("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
