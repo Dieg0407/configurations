@@ -1,0 +1,355 @@
+{
+  "[rust]": {
+    "editor.tabSize": 4
+  },
+  "[xml]": {
+    "editor.tabSize": 4
+  },
+  "editor.fontFamily": "'Inconsolata LGC Nerd Font Mono', Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "'Inconsolata LGC Nerd Font Mono', Consolas, 'Courier New', monospace",
+  "vim.useSystemClipboard": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "g",
+        "d"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.revealDefinition",
+          "title": "[G]oto [D]efinition"
+        }
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "r"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.goToReferences",
+          "title": "[G]oto [R]eferences"
+        }
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "I"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.goToImplementation",
+          "title": "[G]oto [I]mplementation"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "D"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.goToTypeDefinition",
+          "title": "Type [D]efinition"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "d",
+        "s"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.gotoSymbol",
+          "title": "[D]ocument [S]ymbols"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "w",
+        "s"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.gotoSymbol",
+          "title": "[W]orkspace [S]ymbols"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "r",
+        "n"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.rename",
+          "title": "[R]e[n]ame"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "c",
+        "a"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.codeAction",
+          "title": "[C]ode [A]ction"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "h"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.showHover",
+          "title": "[H]over"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "o",
+        "f"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.showHover",
+          "title": "[O]pen [F]loat"
+        }
+      ]
+    },
+    {
+      "before": [
+        "g",
+        "D"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.goToDeclaration",
+          "title": "[G]oto [D]eclaration"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "s",
+        "h"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.openHelp",
+          "title": "[S]earch [H]elp"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "s",
+        "k"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.openGlobalKeybindings",
+          "title": "[S]earch [K]eymaps"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "f",
+        "f"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.quickOpen",
+          "title": "[F]ind [F]iles"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "s",
+        "s"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.showCommands",
+          "title": "[S]earch [S]elect Telescope"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "s",
+        "w"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.addSelectionToNextFindMatch",
+          "title": "[S]earch current [W]ord"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "s",
+        "g"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.findInFiles",
+          "title": "[S]earch by [G]rep"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "s",
+        "d"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.showCommands",
+          "title": "[S]earch [D]iagnostics"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "s",
+        "r"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.showCommands",
+          "title": "[S]earch [R]esume"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "s",
+        "."
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.openRecent",
+          "title": "[S]earch Recent Files"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "<space>"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.showAllEditors",
+          "title": " Find existing buffers"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<space>",
+        "/"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.showAllSymbols",
+          "title": "[/] Fuzzily search in current buffer"
+        }
+      ]
+    }
+  ],
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "bash",
+      "icon": "terminal-bash",
+      "args": [
+        "-l"
+      ]
+    },
+    "zsh": {
+      "path": "zsh"
+    },
+    "fish": {
+      "path": "fish"
+    },
+    "tmux": {
+      "path": "tmux",
+      "icon": "terminal-tmux"
+    },
+    "pwsh": {
+      "path": "pwsh",
+      "icon": "terminal-powershell"
+    }
+  },
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "editor.fontSize": 16,
+  "debug.console.fontSize": 16,
+  "chat.editor.fontSize": 16,
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "java.format.settings.profile": "GoogleStyle",
+  "editor.tabSize": 4,
+  "java.completion.favoriteStaticMembers": [
+    "org.assertj.core.api.Assertions.*",
+    "org.junit.Assert.*",
+    "org.junit.Assume.*",
+    "org.junit.jupiter.api.Assertions.*",
+    "org.junit.jupiter.api.Assumptions.*",
+    "org.junit.jupiter.api.DynamicContainer.*",
+    "org.junit.jupiter.api.DynamicTest.*",
+    "org.mockito.Mockito.*",
+    "org.mockito.ArgumentMatchers.*",
+    "org.mockito.Answers.*"
+  ],
+  "remote.SSH.remotePlatform": {
+    "local-server": "linux"
+  },
+  "files.watcherExclude": {
+    "**/.bloop": true,
+    "**/.metals": true,
+    "**/.ammonite": true
+  },
+  "editor.formatOnSave": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+}
