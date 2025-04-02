@@ -164,11 +164,11 @@ require("lazy").setup({
 
 	-- Theme
 	{
-		"ellisonleao/gruvbox.nvim",
+		"loctvl842/monokai-pro.nvim",
 		priority = 1000,
+		opts = {},
 		init = function()
-			vim.cmd.colorscheme("gruvbox")
-			vim.cmd.hi("Comment gui=none")
+			vim.cmd.colorscheme("monokai-pro")
 		end,
 	},
 
