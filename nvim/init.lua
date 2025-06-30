@@ -162,16 +162,6 @@ require("lazy").setup({
 	require("plugins.autoformat"),
 	require("plugins.autocompletion"),
 
-	-- Theme
-	{
-		"loctvl842/monokai-pro.nvim",
-		priority = 1000,
-		opts = {},
-		init = function()
-			vim.cmd.colorscheme("monokai-pro")
-		end,
-	},
-
 	-- Highlight todo, notes, etc in comments
 	{
 		"folke/todo-comments.nvim",
