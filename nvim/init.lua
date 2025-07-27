@@ -226,6 +226,18 @@ require("lazy").setup({
 			--  Check out: https://github.com/echasnovski/mini.nvim
 		end,
 	},
+	-- Using Lazy
+	{
+		"navarasu/onedark.nvim",
+		priority = 1000, -- make sure to load this before all the other start plugins
+		config = function()
+			require("onedark").setup({
+				style = "darker",
+			})
+			-- Enable theme
+			require("onedark").load()
+		end,
+	},
 	{ -- Highlight, edit, and navigate code
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
@@ -244,6 +256,7 @@ require("lazy").setup({
 				"query",
 				"vim",
 				"vimdoc",
+				"rust",
 			},
 			-- Autoinstall languages that are not installed
 			auto_install = true,
