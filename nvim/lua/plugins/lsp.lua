@@ -152,10 +152,12 @@ return {
 				gopls = {},
 				pyright = {},
 				rust_analyzer = {
-					["rust-analyzer"] = {
-						imports = {
-							granularity = {
-								group = "item",
+					settings = {
+						["rust-analyzer"] = {
+							imports = {
+								granularity = {
+									group = "item",
+								},
 							},
 						},
 					},
