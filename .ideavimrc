@@ -10,3 +10,9 @@ nnoremap <Leader>fg :action FindInPath<CR>
 
 # search for a specific file
 nnoremap <Leader>ff :action GotoFile<CR>
+
+# hover
+nnoremap <leader>h :action QuickDocumentation<CR>
+
+# go to declaration
+nnoremap <leader>gd :action GotoDeclaration<CR>

@@ -3,10 +3,11 @@
     "editor.tabSize": 4
   },
   "[xml]": {
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.defaultFormatter": "redhat.vscode-xml"
   },
-  "editor.fontFamily": "'Inconsolata LGC Nerd Font Mono', Consolas, 'Courier New', monospace",
-  "terminal.integrated.fontFamily": "'Inconsolata LGC Nerd Font Mono', Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "'AnonymicePro Nerd Font Mono','Inconsolata LGC Nerd Font Mono', Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "'AnonymicePro Nerd Font Mono','Inconsolata LGC Nerd Font Mono', Consolas, 'Courier New', monospace",
   "vim.useSystemClipboard": true,
   "vim.leader": "<space>",
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -314,7 +315,7 @@
   },
   "terminal.integrated.defaultProfile.linux": "zsh",
   "editor.fontSize": 16,
-  "debug.console.fontSize": 16,
+  "debug.console.fontSize": 18,
   "chat.editor.fontSize": 16,
   "[java]": {
     "editor.defaultFormatter": "redhat.java"
@@ -351,5 +352,13 @@
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.colorTheme": "GitHub Dark",
+  "geminicodeassist.project": "midyear-pattern-449501-c6",
+  "cloudcode.duetAI.project": "midyear-pattern-449501-c6",
+  "workbench.iconTheme": "material-icon-theme",
+  "redhat.telemetry.enabled": true,
+  "remote.autoForwardPortsSource": "hybrid",
+  "terminal.integrated.fontSize": 16,
+  "workbench.editor.empty.hint": "hidden",
+  "github.copilot.nextEditSuggestions.enabled": true
 }
