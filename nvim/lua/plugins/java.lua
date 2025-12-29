@@ -9,7 +9,7 @@ return {
 
 		local config = {
 			cmd = {
-				"/home/dieg0407/.sdkman/candidates/java/17.0.13-tem/bin/java", -- or '/path/to/java17_or_newer/bin/java'
+				"/opt/jdtls/java/bin/java",
 				"-Declipse.application=org.eclipse.jdt.ls.core.id1",
 				"-Dosgi.bundles.defaultStartLevel=4",
 				"-Declipse.product=org.eclipse.jdt.ls.core.product",
@@ -21,17 +21,10 @@ return {
 				"java.base/java.util=ALL-UNNAMED",
 				"--add-opens",
 				"java.base/java.lang=ALL-UNNAMED",
-
-				-- 💀
 				"-jar",
-				"/opt/jdtls/plugins/org.eclipse.equinox.launcher_1.6.900.v20240613-2009.jar",
-
-				-- 💀
+				"/opt/jdtls/plugins/org.eclipse.equinox.launcher_1.7.100.v20251111-0406.jar",
 				"-configuration",
 				"/opt/jdtls/config_linux",
-
-				-- 💀
-				-- See `data directory configuration` section in the README
 				"-data",
 				workspace_dir,
 			},
@@ -43,10 +36,6 @@ return {
 							{
 								name = "JavaSE-21",
 								path = "/home/dieg0407/.sdkman/candidates/java/21.0.5-tem",
-							},
-							{
-								name = "JavaSE-17",
-								path = "/home/dieg0407/.sdkman/candidates/java/17.0.13-tem",
 							},
 						},
 					},
