@@ -37,7 +37,14 @@ return {
 								name = "JavaSE-21",
 								path = "/home/dieg0407/.sdkman/candidates/java/21.0.5-tem",
 							},
+							{
+								name = "JavaSE-25",
+								path = "/home/dieg0407/.sdkman/candidates/java/25.0.1.fx-librca",
+							},
 						},
+					},
+					format = {
+						enable = false,
 					},
 				},
 			},
