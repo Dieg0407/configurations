@@ -14,3 +14,6 @@ alias gt="git tag"
 
 ## linux
 alias schown="sudo chown"
+alias vim="nvim"
+alias v="nvim"
+alias ls="exa --icons -l"
