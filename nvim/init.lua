@@ -254,8 +254,9 @@ require("lazy").setup({
 	},
 	{ -- Highlight, edit, and navigate code
 		"nvim-treesitter/nvim-treesitter",
+		branch = "main",
 		build = ":TSUpdate",
-		main = "nvim-treesitter.configs", -- Sets main module to use for opts
+		main = "nvim-treesitter", -- Sets main module to use for opts
 		-- [[ Configure Treesitter ]] See `:help nvim-treesitter`
 		opts = {
 			ensure_installed = {
@@ -267,6 +268,7 @@ require("lazy").setup({
 				"luadoc",
 				"markdown",
 				"markdown_inline",
+				"yaml",
 				"query",
 				"vim",
 				"vimdoc",
@@ -283,6 +285,10 @@ require("lazy").setup({
 			},
 			indent = { enable = true, disable = { "ruby" } },
 		},
+	},
+	{ -- Highlight, edit, and navigate code
+		"OXY2DEV/markview.nvim",
+		lazy = false,
 	},
 }, {
 	ui = {
